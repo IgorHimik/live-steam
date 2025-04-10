@@ -1,0 +1,196 @@
+html{
+  padding: 0;
+  margin: 0;
+}
+
+/*шапка*/
+.bc-image{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('../img/bc-img-header.png') no-repeat center center fixed;
+  background-size: cover;
+
+}
+.live-steam-bc{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  url('../img/live-steam-bc-about.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+th.item-1, td.item-1 {
+  width: 60%;
+}
+th.item-2, td.item-2 {
+  width: 20%;
+}
+th.item-3, td.item-3 {
+  width: 20%;
+}
+
+
+.line{
+  background-color: #42b82c;
+  width: 100px;
+  height: 5px;
+}
+
+
+
+.logo {
+  width: 180px;
+  max-height: 100px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+.header-description{
+  font-size: 2rem;
+}
+@media (max-width: 1390px) {
+  .logo {
+    width: 200px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .header-description{
+    font-size: 1.5rem;
+  }
+  .img-sinusoids{
+    width: 400px;
+
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    width: 140px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .header-description{
+    font-size: 1.2rem;
+  }
+  .img-sinusoids{
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 40px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .header-description {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .fs-2, .fs-3 {
+    font-size: 1rem !important;
+  }
+
+  .fs-4 {
+    font-size: 0.9rem !important;
+  }
+
+  .fs-5 {
+    font-size: 0.85rem !important;
+  }
+
+  .img-sinusoids {
+    width: 50%;
+  }
+
+  .carousel-item img {
+    width: 45% !important;
+  }
+
+  .table th, .table td {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+
+  .text-about {
+    font-size: 0.95rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+  }
+
+  footer .container p {
+    font-size: 0.9rem !important;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 70% 70%;
+  }
+
+  .list-icon li img{
+    width: 20%;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+/* Убираем стандартную иконку гамбургера */
+.navbar-toggler-icon {
+  display: none;
+}
+.navbar-toggler{
+  border: 2px white solid;
+}
+
+/* Добавляем стрелку вправо вместо гамбургера */
+.navbar-toggler:before {
+  content: "►";  /* Стрелка вправо */
+  font-size: 30px;
+  color: white; /* Белый цвет */
+  font-weight: bold;
+
+}
+
+/* Когда меню открыто (при наличии класса .collapsed), меняем стрелку на вниз */
+.navbar-toggler.collapsed:before {
+  content: "▼"; /* Стрелка вниз */
+}
+
+/*section one*/
+.scroll-auto .list-group-item{
+  background-color: white;
+  color: black;
+}
+.scroll-auto .list-group-item:hover{
+  background-color: #42b82c;
+  color: white;
+}
+
+.text-about{
+  background-color: #297121;
+  color: white;
+}
+
+
